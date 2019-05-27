@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-fab-button size="small" color="success">
+        <ion-icon name="menu"></ion-icon>
+        <ion-menu-button menu="first"> </ion-menu-button>
+      </ion-fab-button>
+    </ion-buttons>
+    <ion-title text-capitalize>
+      Hola
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button (click)="getLocation()" expand="block">Get Location</ion-button>
+
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Location Info</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label>
+        Latitue
+      </ion-label>
+      <ion-badge slot="end">{{ lat }}</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        longitude
+      </ion-label>
+      <ion-badge slot="end">{{ lng }}</ion-badge>
+    </ion-item>
+  </ion-list>
+  <ion-card>
+    <ion-item color="success">
+      <ion-icon name="contact" slot="start"></ion-icon>
+      <ion-label>Conductor : Leonardo Luyo </ion-label>
+    </ion-item>
+    <ion-item color="success">
+      <ion-icon name="car" slot="start"></ion-icon>
+      <ion-label>Nissan Versa 2019</ion-label>
+    </ion-item>
+    <ion-item color="success">
+      <ion-icon name="logo-steam" slot="start"></ion-icon>
+      <ion-label>Estado : -libre-</ion-label>
+    </ion-item>
+  </ion-card>
+</ion-content>

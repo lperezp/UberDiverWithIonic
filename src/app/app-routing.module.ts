@@ -1,19 +1,19 @@
-import { NgModule } from '@angular/core';
-import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { NgModule } from "@angular/core";
+import { PreloadAllModules, RouterModule, Routes } from "@angular/router";
 
 const routes: Routes = [
   {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
+    path: "",
+    redirectTo: "inicio",
+    pathMatch: "full"
   },
   {
-    path: 'home',
-    loadChildren: './home/home.module#HomePageModule'
+    path: "inicio",
+    loadChildren: "./pages/inicio/inicio.module#InicioPageModule"
   },
   {
-    path: 'list',
-    loadChildren: './list/list.module#ListPageModule'
+    path: "list",
+    loadChildren: "./list/list.module#ListPageModule"
   }
 ];
 
